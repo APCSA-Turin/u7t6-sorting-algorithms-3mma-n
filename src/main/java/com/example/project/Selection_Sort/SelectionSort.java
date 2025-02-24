@@ -8,7 +8,15 @@ public class SelectionSort {
 
     // PART A. implementing selection sort
     public static int[] selectionSort(int[] elements) {
-       
+        for (int i = 0; i < elements.length; i++) {
+            int min = elements[i];
+            int minIdx = i;
+            for (int j = i + 1; j < elements.length; j++) {
+                if (elements[j] < min) {
+                    minIdx = j;
+                }
+            }
+        }
         return elements;
     }
 
