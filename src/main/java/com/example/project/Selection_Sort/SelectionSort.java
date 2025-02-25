@@ -14,8 +14,12 @@ public class SelectionSort {
             for (int j = i + 1; j < elements.length; j++) {
                 if (elements[j] < min) {
                     minIdx = j;
+                    min = elements[j];
                 }
             }
+            int temp = elements[i];
+            elements[i] = elements[minIdx];
+            elements[minIdx] = temp;
         }
         return elements;
     }
@@ -23,7 +27,17 @@ public class SelectionSort {
 
     // PART B. sorting a 1000-word list
     public static ArrayList<String> selectionSortWordList(ArrayList<String> words) {
-       
+        for (int i = 0; i < words.size(); i++) {
+            String min = words.get(i);
+            int minIdx = i;
+            for (int j = i + 1; j < words.size(); j++) {
+                if (words.get(j).compareTo(min) < 0) {
+                    minIdx = j;
+                    min = words.get(j);
+                }
+            }
+            words.set(i, words.set(minIdx, words.get(i)));
+        }
         return words;
     }
 
