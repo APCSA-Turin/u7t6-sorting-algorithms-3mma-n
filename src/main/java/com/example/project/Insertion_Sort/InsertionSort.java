@@ -44,17 +44,21 @@ public class InsertionSort {
 
     // PART B. sorting a 1000-word list
     public static ArrayList<String> insertionSortWordList(ArrayList<String> words) {
+        int loopCounter = 0;
         for (int i = 1; i < words.size(); i++) {
             int j = i;
             while (j > 0 && words.get(j).compareTo(words.get(j - 1)) < 0) {
                 words.set(j, words.set(j - 1, words.get(j)));
                 j--;
+                loopCounter++;
             }
         }
+        System.out.println("INSERTION SORT: NUMBER OF ITERATIONS: " + loopCounter);
         return words;
     }
 
     public static void selectionSortWordList(ArrayList<String> words) {
+        int loopCounter = 0;
         for (int i = 0; i < words.size(); i++) {
             String min = words.get(i);
             int minIdx = i;
@@ -63,9 +67,11 @@ public class InsertionSort {
                     minIdx = j;
                     min = words.get(j);
                 }
+                loopCounter++;
             }
             words.set(i, words.set(minIdx, words.get(i)));
         }
+        System.out.println("SELECTION SORT: NUMBER OF ITERATIONS: " + loopCounter);
     }
 
     public static ArrayList<String> loadWordsInto(ArrayList<String> wordList) {

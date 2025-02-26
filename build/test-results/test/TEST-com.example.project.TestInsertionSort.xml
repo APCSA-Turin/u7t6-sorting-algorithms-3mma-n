@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.TestInsertionSort" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-25T17:14:08" hostname="codespaces-544167" time="0.109">
+<testsuite name="com.example.project.TestInsertionSort" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-26T16:28:27" hostname="codespaces-544167" time="0.079">
   <properties/>
-  <testcase name="testInsertionSort_Words()" classname="com.example.project.TestInsertionSort" time="0.084"/>
+  <testcase name="testInsertionSort_Words()" classname="com.example.project.TestInsertionSort" time="0.057"/>
   <testcase name="testInsertionSort_EmptyArray()" classname="com.example.project.TestInsertionSort" time="0.004"/>
-  <testcase name="testInsertionSort_ReverseSortedArray()" classname="com.example.project.TestInsertionSort" time="0.002"/>
-  <testcase name="testInsertionSort_UnsortedArray()" classname="com.example.project.TestInsertionSort" time="0.001"/>
+  <testcase name="testInsertionSort_ReverseSortedArray()" classname="com.example.project.TestInsertionSort" time="0.001"/>
+  <testcase name="testInsertionSort_UnsortedArray()" classname="com.example.project.TestInsertionSort" time="0.003"/>
   <testcase name="testInsertionSort_AlreadySortedArray()" classname="com.example.project.TestInsertionSort" time="0.002"/>
-  <testcase name="testInsertionSort_SingleElementArray()" classname="com.example.project.TestInsertionSort" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testInsertionSort_SingleElementArray()" classname="com.example.project.TestInsertionSort" time="0.001"/>
+  <system-out><![CDATA[INSERTION SORT: NUMBER OF ITERATIONS: 257349
+INSERTION SORT: NUMBER OF ITERATIONS: 0
+INSERTION SORT: NUMBER OF ITERATIONS: 10
+INSERTION SORT: NUMBER OF ITERATIONS: 5
+INSERTION SORT: NUMBER OF ITERATIONS: 0
+INSERTION SORT: NUMBER OF ITERATIONS: 0
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
